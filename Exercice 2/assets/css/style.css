@@ -1,0 +1,68 @@
+body {
+    margin: 0 10px 0 10px;
+}
+#grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 1fr 1.5fr;
+    grid-template-areas: 
+        "bloc1 bloc2 bloc3 bloc4"
+        "bloc5 . . bloc6"
+        "bloc7 . bloc8 bloc9";
+    column-gap: 10px;
+    row-gap: 10px;
+    color: white;
+}
+#bloc1 {
+    background-color: #b03532;
+    grid-area: bloc1;
+    padding: 15px 0 0 15px;
+    margin-top: 10px;
+}
+#bloc2 {
+    background-color: #33a8a5;
+    grid-area: bloc2;
+    padding: 15px 0 0 15px;
+    margin-top: 10px;
+}
+#bloc3 {
+    background-color: #30997a;
+    grid-area: bloc3;
+    padding: 15px 0 0 15px;
+    margin-top: 10px;
+}
+#bloc4 {
+    background-color: #6a478f;
+    grid-area: bloc4;
+    padding: 15px 0 0 15px;
+    margin-top: 10px;
+}
+#bloc5 {
+    background-color: #da6f2b;
+    grid-area: bloc5;
+    padding: 15px 0 0 15px;
+}
+#bloc6 {
+    background-color: #3d8bb1;
+    grid-area: bloc6;
+    padding: 15px 0 0 15px;
+}
+#bloc7 {
+    background-color: #e03f3f;
+    grid-area: bloc7;
+    padding: 15px 0 0 15px;
+    margin-bottom: 10px;
+}
+#bloc8 {
+    background-color: #59a627;
+    grid-area: bloc8;
+    padding: 15px 0 0 15px;
+    margin-bottom: 10px;
+}
+#bloc9 {
+    background-color: #4b6aa4;
+    grid-area: bloc9;
+    padding: 15px 0 0 15px;
+    margin-bottom: 10px;
+}
