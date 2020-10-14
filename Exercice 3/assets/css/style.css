@@ -1,13 +1,14 @@
 #grid {
     display: grid;
     height: 100vh;
-    grid-template-columns: 20% 45% 35%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
         "header header header"
         "menu main right"
         "menu footer footer";
-    background-color: #ffcccc;
+    background-color: red;
+    grid-gap: 2px;
 }
 body {
     margin:0
@@ -16,7 +17,7 @@ header, #menu, main, #right, footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px #ff0c0c;
+    background-color: #ffcccc;
 }
 header {
     grid-area: header;
@@ -38,7 +39,7 @@ footer {
         display: grid;
         height: 100vh;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
         grid-template-areas: 
         "header"
         "menu"

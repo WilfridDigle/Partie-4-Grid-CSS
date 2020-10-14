@@ -1,8 +1,7 @@
 #grid {
     display: grid;
-    height: 140px;
-    grid-template-rows: 50px 50px 50px;
-    grid-template-columns: 100px 100px 100px;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
         "bloc1 bloc2 bloc3"
         "bloc4 bloc5 bloc6"

@@ -1,0 +1,144 @@
+#grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 3fr repeat(6, 1fr);
+    grid-template-areas: 
+        "header header header header"
+        "bloc1 bloc2 bloc3 bloc4"
+        "bloc5 bloc6 bloc7 bloc8"
+        "bloc9 bloc10 bloc11 bloc12"
+        "bloc13 bloc14 bloc15 bloc16"
+        "bloc17 bloc18 bloc19 bloc20"
+        "bloc21 bloc22 bloc23 bloc24";
+    background-color: grey;
+}
+body {
+    margin: 0;
+}
+#grid > div:hover {
+    background-color: lightcoral;
+}
+#grid > div {
+    border: solid 2px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 80px;
+    grid-area: header;
+    margin-right: 10px;
+}
+#bloc1 {
+    grid-area: bloc1;
+    background-color: lightgrey;
+}
+#bloc2 {
+    grid-area: bloc2;
+    background-color: lightgrey;
+}
+#bloc3 {
+    grid-area: bloc3;
+    background-color: lightgrey;
+}
+#bloc4 {
+    grid-area: bloc4;
+    background-color: lightgrey;
+}
+#bloc5 {
+    grid-area: bloc5;
+    background-color: lightgrey;
+}
+#bloc6 {
+    grid-area: bloc6;
+    background-color: lightgrey;
+}
+#bloc7 {
+    grid-area: bloc7;
+    background-color: lightgrey;
+}
+#bloc8 {
+    grid-area: bloc8;
+    background-color: lightgrey;
+}
+#bloc9 {
+    grid-area: bloc9;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc10 {
+    grid-area: bloc10;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc11 {
+    grid-area: bloc11;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc12 {
+    grid-area: bloc12;
+    background-color: lightgrey;
+}
+#bloc13 {
+    grid-area: bloc13;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc14 {
+    grid-area: bloc14;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc15 {
+    grid-area: bloc15;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc16 {
+    grid-area: bloc16;
+    background-color: lightgrey;
+}
+#bloc17 {
+    grid-area: bloc17;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc18 {
+    grid-area: bloc18;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc19 {
+    grid-area: bloc19;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc20 {
+    grid-area: bloc20;
+    background-color: lightgrey;
+}
+#bloc21 {
+    grid-area: bloc21;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc22 {
+    grid-area: bloc22;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc23 {
+    grid-area: bloc23;
+    background-color: white;
+    font-weight: bold;
+}
+#bloc24 {
+    grid-area: bloc24;
+    background-color: #72a2c8;
+}
